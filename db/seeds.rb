@@ -9,6 +9,14 @@ Game.destroy_all
 GamePlatform.destroy_all
 Platform.destroy_all
 
+profile_pictures = [
+    smiley:"https://pixabay.com/vectors/smiley-emoticon-happy-face-icon-1635449/",
+    penguin:"https://pixabay.com/vectors/avatar-beak-black-cute-emotion-1295429/",
+    sad:"https://pixabay.com/vectors/smiley-emoticon-sad-face-icon-1635454/",
+    amazed_chipmunk:"https://pixabay.com/vectors/amazed-avatar-chipmunk-media-misc-1295833/",
+    wolf:"https://pixabay.com/illustrations/wolf-wolves-dog-lupine-canine-1247882/",
+    crazy_pig:"https://pixabay.com/vectors/avatar-happy-pig-pork-1295575/"]
+
 d2 = Game.create(name:"Destiny 2", genre:"FPS", cover_art:"none.jpg", desc:"Shoot some aliens, save humanity, be a Guardian")
 cod = Game.create(name:"Call of Duty", genre:"FPS", cover_art:"none.jpg", desc:"Military Man Saves The United States From Russia or China")
 
