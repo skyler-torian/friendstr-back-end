@@ -20,9 +20,9 @@ profile_pictures = [
 d2 = Game.create(name:"Destiny 2", genre:"FPS", cover_art:"none.jpg", desc:"Shoot some aliens, save humanity, be a Guardian")
 cod = Game.create(name:"Call of Duty", genre:"FPS", cover_art:"none.jpg", desc:"Military Man Saves The United States From Russia or China")
 
-skyler = User.create(username:"skyler1", name:"Skyler", bio:"Just here to have some fun. I love playing Destiny 2", profile_picture:"nothing.jpg")
-jenny = User.create(username:"jenny1", name:"Jenny", bio:"I am a hard core gamer. I play Apex Legends!", profile_picture:"nothing.jpg")
-anna = User.create(username:"anna1", name:"Anna", bio:"I play Minecraft, that's it.", profile_picture:"nothing.jpg")
+skyler = User.create(username:"skyler1", name:"Skyler", bio:"Just here to have some fun. I love playing Destiny 2", profile_picture:"https://pixabay.com/vectors/smiley-emoticon-happy-face-icon-1635449/")
+jenny = User.create(username:"jenny1", name:"Jenny", bio:"I am a hard core gamer. I play Apex Legends!", profile_picture:"https://pixabay.com/vectors/avatar-happy-pig-pork-1295575/")
+anna = User.create(username:"anna1", name:"Anna", bio:"I play Minecraft, that's it.", profile_picture:"https://pixabay.com/vectors/amazed-avatar-chipmunk-media-misc-1295833/")
 
 ps = Platform.create(name:"Playstation 4")
 xbox = Platform.create(name:"Xbox One")
