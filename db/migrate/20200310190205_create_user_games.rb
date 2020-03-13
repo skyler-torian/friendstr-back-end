@@ -5,7 +5,7 @@ class CreateUserGames < ActiveRecord::Migration[6.0]
       t.integer :game_id
       t.integer :platform_id
       t.string :platform_username
-      t.boolean :favorite
+      t.boolean :favorite, default: false
 
       t.timestamps
     end
