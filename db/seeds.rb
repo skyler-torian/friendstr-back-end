@@ -17,8 +17,8 @@ profile_pictures = [
     wolf:"https://pixabay.com/illustrations/wolf-wolves-dog-lupine-canine-1247882/",
     crazy_pig:"https://pixabay.com/vectors/avatar-happy-pig-pork-1295575/"]
 
-d2 = Game.create(name:"Destiny 2", genre:"FPS", cover_art:"none.jpg", desc:"Shoot some aliens, save humanity, be a Guardian")
-cod = Game.create(name:"Call of Duty", genre:"FPS", cover_art:"none.jpg", desc:"Military Man Saves The United States From Russia or China")
+d21 = Game.create(name:"Destiny 21", genre:"FPS", cover_art:"none.jpg", desc:"Shoot some aliens, save humanity, be a Guardian", api_game_id:50000)
+cod21 = Game.create(name:"Call of Duty 21", genre:"FPS", cover_art:"none.jpg", desc:"Military Man Saves The United States From Russia or China", api_game_id:50001)
 
 skyler = User.create(username:"skyler1", name:"Skyler", bio:"Just here to have some fun. I love playing Destiny 2", profile_picture:"https://pixabay.com/vectors/smiley-emoticon-happy-face-icon-1635449/")
 jenny = User.create(username:"jenny1", name:"Jenny", bio:"I am a hard core gamer. I play Apex Legends!", profile_picture:"https://pixabay.com/vectors/avatar-happy-pig-pork-1295575/")
@@ -28,8 +28,8 @@ ps = Platform.create(name:"Playstation 4")
 xbox = Platform.create(name:"Xbox One")
 pc = Platform.create(name:"PC Master Race")
 
-skyler_g_1 = UserGame.create(user_id:skyler.id, game_id:d2.id, favorite:true, platform_username:"skymanat7", platform_id: xbox.id)
-jenny_g_1 = UserGame.create(user_id:jenny.id, game_id: cod.id, favorite:false, platform_username:"jenny123", platform_id: ps.id)
+skyler_g_1 = UserGame.create(user_id:skyler.id, game_id:d21.id, favorite:true, platform_username:"skymanat7", platform_id: xbox.id)
+jenny_g_1 = UserGame.create(user_id:jenny.id, game_id: cod21.id, favorite:false, platform_username:"jenny123", platform_id: ps.id)
 
 friendship1 = UserFriend.create(user_id:skyler.id, friend_id:jenny.id, status:1)
 friendship2 = UserFriend.create(user_id:jenny.id, friend_id:skyler.id, status:1)
@@ -37,5 +37,5 @@ friendship3 = UserFriend.create(user_id:skyler.id, friend_id:anna.id, status:1)
 
 
 
-platform1 = GamePlatform.create(game_id:d2.id, platform_id:xbox.id)
-platform2 = GamePlatform.create(game_id:cod.id, platform_id:ps.id)
+platform1 = GamePlatform.create(game_id:d21.id, platform_id:xbox.id)
+platform2 = GamePlatform.create(game_id:cod21.id, platform_id:ps.id)

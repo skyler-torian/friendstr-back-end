@@ -5,6 +5,7 @@ class CreateGames < ActiveRecord::Migration[6.0]
       t.string :genre
       t.string :cover_art
       t.string :desc
+      t.integer :api_game_id
 
       t.timestamps
     end

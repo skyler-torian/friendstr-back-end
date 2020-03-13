@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_03_10_190357) do
     t.string "genre"
     t.string "cover_art"
     t.string "desc"
+    t.integer "api_game_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -50,7 +51,7 @@ ActiveRecord::Schema.define(version: 2020_03_10_190357) do
     t.integer "game_id"
     t.integer "platform_id"
     t.string "platform_username"
-    t.boolean "favorite" 
+    t.boolean "favorite", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
