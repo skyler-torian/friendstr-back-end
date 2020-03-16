@@ -28,8 +28,8 @@ ps = Platform.create(name:"Playstation 4")
 xbox = Platform.create(name:"Xbox One")
 pc = Platform.create(name:"PC Master Race")
 
-skyler_g_1 = UserGame.create(user_id:skyler.id, game_id:d21.id, favorite:true, platform_username:"skymanat7", platform_id: xbox.id)
-jenny_g_1 = UserGame.create(user_id:jenny.id, game_id: cod21.id, favorite:false, platform_username:"jenny123", platform_id: ps.id)
+skyler_g_1 = UserGame.create(user_id:skyler.id, game_id:d21.id, favorite:true, platform_id: xbox.id)
+jenny_g_1 = UserGame.create(user_id:jenny.id, game_id: cod21.id, favorite:false, platform_id: ps.id)
 
 friendship1 = UserFriend.create(user_id:skyler.id, friend_id:jenny.id, status:1)
 friendship2 = UserFriend.create(user_id:jenny.id, friend_id:skyler.id, status:1)
