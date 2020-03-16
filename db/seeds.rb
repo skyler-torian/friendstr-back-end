@@ -24,9 +24,16 @@ skyler = User.create(username:"skyler1", name:"Skyler", bio:"Just here to have s
 jenny = User.create(username:"jenny1", name:"Jenny", bio:"I am a hard core gamer. I play Apex Legends!", profile_picture:"https://pixabay.com/vectors/avatar-happy-pig-pork-1295575/")
 anna = User.create(username:"anna1", name:"Anna", bio:"I play Minecraft, that's it.", profile_picture:"https://pixabay.com/vectors/amazed-avatar-chipmunk-media-misc-1295833/")
 
+
+
 ps = Platform.create(name:"Playstation 4")
 xbox = Platform.create(name:"Xbox One")
-pc = Platform.create(name:"PC Master Race")
+pc = Platform.create(name:"PC")
+n64 = Platform.create(name: "Nintendo 64")
+xbox360 = Platform.create(name:"Xbox 360")
+ps3 = Platform.create(name:"Playstation 3")
+sn = Platform.create(name:"Super Nintendo")
+switch = Platform.create(name:"Nintendo Switch")
 
 skyler_g_1 = UserGame.create(user_id:skyler.id, game_id:d21.id, favorite:true, platform_id: xbox.id)
 jenny_g_1 = UserGame.create(user_id:jenny.id, game_id: cod21.id, favorite:false, platform_id: ps.id)

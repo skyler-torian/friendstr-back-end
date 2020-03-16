@@ -1,7 +1,7 @@
 class GamePlatformsController < ApplicationController
     def index
-        platforms = Platform.all
-        render json: platforms 
+        game_platforms = GamePlatform.all
+        render json: game_platforms 
     end
 
 end
