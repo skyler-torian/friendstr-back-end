@@ -50,7 +50,6 @@ ActiveRecord::Schema.define(version: 2020_03_10_190357) do
     t.integer "user_id"
     t.integer "game_id"
     t.integer "platform_id"
-    t.string "platform_username"
     t.boolean "favorite", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
