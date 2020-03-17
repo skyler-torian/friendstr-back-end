@@ -24,9 +24,10 @@ class UserGamesController < ApplicationController
 
     def show 
         
-        user_games = User.find(params[:id]).user_games
+        user = User.find(params[:id])
+        my_games = user.games
         # selected_games = UserGame.find(user_id: user)
-        render json: user_games
+        render json: my_games
     end
 
 
