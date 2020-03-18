@@ -12,4 +12,8 @@ class UsersController < ApplicationController
         render json: my_games
     end
 
+    def create 
+        User.find_or_create_by(name: params[:name], username: params[:username], bio: params[:bio], profile_picture: params[:profile_picture])
+    end
+
 end
