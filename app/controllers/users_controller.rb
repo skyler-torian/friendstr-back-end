@@ -13,7 +13,17 @@ class UsersController < ApplicationController
     end
 
     def create 
-        User.find_or_create_by(name: params[:name], username: params[:username], bio: params[:bio], profile_picture: params[:profile_picture])
+        user = User.find_or_create_by(name: params[:name], username: params[:username], bio: params[:bio], profile_picture: params[:profile_picture])
+
+        if user.valid?
+            render json: {user: user}
+        else
+            render json: {
+                message: user.errors.full_messages
+            }
+        end
     end
+
+
 
 end
