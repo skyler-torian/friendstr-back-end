@@ -2,11 +2,11 @@
 # require 'json'
 # require 'active-support/all'
 
-User.destroy_all
-UserFriend.destroy_all
-UserGame.destroy_all
-Game.destroy_all
-GamePlatform.destroy_all
+# User.destroy_all
+# UserFriend.destroy_all
+# UserGame.destroy_all
+# Game.destroy_all
+# GamePlatform.destroy_all
 Platform.destroy_all
 
 # profile_pictures = [
@@ -29,7 +29,7 @@ pc = Platform.create(name:"PC")
 xbox1 = Platform.create(name:"Xbox One")
 xbox360 = Platform.create(name:"Xbox 360")
 xbox = Platform.create(name:"Xbox")
-switch = Platform.create(name:"Nintendo Switch")
+switch = Platform.create(name:"Switch")
 threeds = Platform.create(name:"3DS")
 wiiu = Platform.create(name:"Wii U")
 wii = Platform.create(name:"Wii")
