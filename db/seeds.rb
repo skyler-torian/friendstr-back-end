@@ -25,25 +25,28 @@ Platform.destroy_all
 
 
 
-ps4 = Platform.create(name:"Playstation 4")
-xbox1 = Platform.create(name:"Xbox One")
 pc = Platform.create(name:"PC")
-n64 = Platform.create(name: "Nintendo 64")
+xbox1 = Platform.create(name:"Xbox One")
 xbox360 = Platform.create(name:"Xbox 360")
-ps3 = Platform.create(name:"Playstation 3")
-sn = Platform.create(name:"Super Nintendo")
+xbox = Platform.create(name:"Xbox")
 switch = Platform.create(name:"Nintendo Switch")
-dc = Platform.create(name:"Dreamcast")
 threeds = Platform.create(name:"3DS")
-wii = Platform.create(name:"Wii")
 wiiu = Platform.create(name:"Wii U")
+wii = Platform.create(name:"Wii")
+gc = Platform.create(name:"Gamecube")
+n64 = Platform.create(name: "Nintendo 64")
+sn = Platform.create(name:"Super Nintendo")
 nes = Platform.create(name:"NES")
+ps4 = Platform.create(name:"Playstation 4")
 ps3 = Platform.create(name:"Playstation 3")
 ps2 = Platform.create(name:"Playstation 2")
 ps1 = Platform.create(name:"Playstation 1")
-xbox = Platform.create(name:"Xbox")
+dc = Platform.create(name:"Dreamcast")
 genesis = Platform.create(name:"Sega Genesis")
 atari = Platform.create(name:"Atari")
+
+
+
 
 
 

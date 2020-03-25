@@ -14,7 +14,10 @@ class UserGamesController < ApplicationController
         
         # set_game_platform = GamePlatform.create(game_id: new_game.id, platform_id: get_platform.id)
         
+        # byebug
         new_favorite = UserGame.find_or_create_by(user_id: params["user_id"], game_id: new_game.id, platform_id: get_platform.id)
+
+
     end
 
     def games 
