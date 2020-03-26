@@ -33,6 +33,17 @@ class UserGamesController < ApplicationController
         render json: my_games
     end
 
+    def destroy
+      
+        user_game = UserGame.find_by(game_id: params[:game_id], user_id: params[:user_id])
+        user_game.destroy
+
+        user = User.find_by(id: params[:user_id])
+        my_games = user.games
+        render json: my_games
+    end
+     
+       
 
         
         
